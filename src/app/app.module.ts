@@ -7,6 +7,7 @@ import { QuotehighlightDirective } from './quotehighlight.directive';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
 import { QuoteComponent } from './quote/quote.component';
+import { QuoteDetailComponentComponent } from './quote-detail-component/quote-detail-component.component';
 
 
 
@@ -15,7 +16,8 @@ import { QuoteComponent } from './quote/quote.component';
     AppComponent,
     QuotehighlightDirective,
     QuoteFormComponent,
-    QuoteComponent
+    QuoteComponent,
+    QuoteDetailComponentComponent
   ],
   imports: [
     BrowserModule,
