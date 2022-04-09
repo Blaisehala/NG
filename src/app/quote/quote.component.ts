@@ -11,6 +11,10 @@ import { Quote} from '../quote';
 })
 export class QuoteComponent implements OnInit {
 
+  seeDetails(index){
+    this.quotes[index].showDescription =!this.quotes[index].showDescription
+
+  }
   quotes:Quote[]=[
 
     new Quote(1,'People and Tech','Technology is best when it brings people together'),
