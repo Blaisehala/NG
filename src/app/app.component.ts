@@ -8,11 +8,11 @@ import { Quote } from './quote';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-quotes:Quote[]=[
-  {quote: 'one', author: 'lorem'},
-  {quote: 'Maltida ', author: 'lorem'},
-  {quote: 'one', author: 'lorem'},
-  {quote: 'one', author: 'lorem'},
-  {quote: 'one', author: 'lorem'},
-];
+// quotes:Quote[]=[
+//   {quote: 'one', author: 'lorem'},
+//   {quote: 'Maltida ', author: 'lorem'},
+//   {quote: 'one', author: 'lorem'},
+//   {quote: 'one', author: 'lorem'},
+//   {quote: 'one', author: 'lorem'},
+// ];
 }
