@@ -13,12 +13,12 @@ export class QuoteComponent implements OnInit {
 
   quotes:Quote[]=[
 
-    {id:1,name:'People and Tech',description:'Technology is best when it brings people together'},
-    {id:2,name:'Human and Machines',description:'It is only when they go wrong that machines remind'},
-    {id:3,name:'Humanity and Tech',description:'It has become appallingly obvious that our technology has exceeded our humanity.”'},
-    {id:4,name:'The Great',description:'The greatest glory in living lies not in never falling, but in rising every time we fall'},
-    {id:5,name:'Time is of the essence',description:'Your time is limited, so dont waste it living someone elses life. Dont be trapped by dogma which is living with the results of other peoples thinking'},
-    {id:6,name:'Life',description:'If you look at what you have in life, youll always have more. If you look at what you dont have in life, youll never have enough'},
+    new Quote(1,'People and Tech','Technology is best when it brings people together'),
+    new Quote(2,'Human and Machines','It is only when they go wrong that machines remind'),
+    new Quote(3,'Humanity and Tech','It has become appallingly obvious that our technology has exceeded our humanity.”'),
+    new Quote(4,'The Great','The greatest glory in living lies not in never falling, but in rising every time we fall'),
+    new Quote (5,'Time is of the essence','Your time is limited, so dont waste it living someone elses life. Dont be trapped by dogma which is living with the results of other peoples thinking'),
+    new Quote(6,'Life','If you look at what you have in life, youll always have more. If you look at what you dont have in life, youll never have enough'),
   ];
 
 

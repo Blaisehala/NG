@@ -2,12 +2,14 @@
   <h1>QUOTABLES.IO</h1>
   <hr>
   <ul>
-    <li *ngFor="let quote of quotes">
-      {{quote.name}}
+    <div *ngFor="let quote of quotes">
+      <li>{{quote.name}}</li>
+      <button></button>
+        
+        <app-quote-details *ngIf="quote.showDescription" [quote]="quote"></app-quote-details>
       
-      <!-- {{quote.author}} -->
-      <!-- {{quote.author}} -->
-
-    </li>
+    
+    </div>
+    
   </ul>
 </div>
