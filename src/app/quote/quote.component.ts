@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 import { Quote} from '../quote';
@@ -26,11 +27,19 @@ export class QuoteComponent implements OnInit {
   ];
   
   addNewQuote(quote){
+  let quo = quote.description
+  let title = quote.title
+  let author = quote.author
+  let yourname = quote.yourname 
+  let date= quote.Date
+
+
+
     let quoteLength = this.quotes.length;
     // quote.id = quoteLength+1;
     // Date 
     console.log(quote);
-    this.quotes.push(quote);
+    this.quotes.push(new Quote(title,quo,author,yourname,Date()));
   }
 
 

@@ -5,12 +5,13 @@
 
   
   <div class="row">
-    <div class="col">
-      <p>{{quote.votes}}</p>
-      <button (click)="quote.upvote()" class="btn "><i class="fa-solid fa-thumbs-up"></i></button>
+    <div class="  col m-2">
+      
+      <button (click)="quote.upvote()" class="btn btn-info "><i class="fa-solid fa-thumbs-up">{{quote.votes}}</i></button>
 
-      <p>{{quote.vote}}</p>
-      <button (click)="quote.downvote()" class=" btn "> <i class="fa-solid fa-thumbs-down"></i></button>
+      
+      <button (click)="quote.downvote()" class=" btn btn-danger"> <i class="fa-solid fa-thumbs-down">{{quote.vote}}</i> </button>
+     
     </div>
 
 
