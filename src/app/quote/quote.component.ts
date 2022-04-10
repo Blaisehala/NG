@@ -39,7 +39,7 @@ export class QuoteComponent implements OnInit {
     // quote.id = quoteLength+1;
     // Date 
     console.log(quote);
-    this.quotes.push(new Quote(title,quo,author,yourname,Date()));
+    this.quotes.push(new Quote(title,quo,author,yourname,date));
   }
 
 
