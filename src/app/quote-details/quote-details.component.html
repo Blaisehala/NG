@@ -2,11 +2,20 @@
   <p>
     <!-- {{quote.description}} -->
   </p>
+
+  
   <div class="row">
     <div class="col">
-      <button class="btn "><i class="fa-solid fa-thumbs-up"></i></button>
-      <button class=" btn "> <i class="fa-solid fa-thumbs-down"></i></button>
+      <p>{{quote.votes}}</p>
+      <button (click)="quote.upvote()" class="btn "><i class="fa-solid fa-thumbs-up"></i></button>
+
+      <p>{{quote.vote}}</p>
+      <button (click)="quote.downvote()" class=" btn "> <i class="fa-solid fa-thumbs-down"></i></button>
     </div>
+
+
+
+
     <div class="col">
       <button class="btn btn-danger" (click)="quoteRead(true)"><i class="fa-solid fa-trash-can"></i></button>
       <br>

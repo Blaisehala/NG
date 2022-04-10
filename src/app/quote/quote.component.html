@@ -1,17 +1,18 @@
 <div class="mt-5 container-fluid">
   <div class=" text-light">
     <h1 class="text-center">QUOTABLES.IO</h1>
-    <p class="text-center" >This application allows you to  create quotes and have the quotes voted on whether they are terrible or  inspirational. 
+    <p class="text-center">This application allows you to create quotes and have the quotes voted on whether they are
+      terrible or inspirational.
 
     </p>
     <hr class="text-ligt">
     <hr>
   </div>
 
-  <div class="row" >
+  <div class="row">
 
     <div class="col-md-6">
-      <app-quote-form  (addQuote)="addNewQuote($event)"></app-quote-form>
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 
     </div>
     <div class="col-md-6">
@@ -22,41 +23,41 @@
               {{quote.title}}
               {{quote.author}}
               {{quote.yourname}}
-             
+
             </div>
-            
-  
+
+
             <div class="exp">
               {{quote.description}}
             </div>
-  
+
             <p class="time"> posted on {{quote.postDate|date}}</p>
-            
-  
+
+
             <div class="col-md-6">
               <button class="btn btn-info" (click)="seeDetails(i)">See More</button>
             </div>
           </div>
-         
-  
-          
+
+          <app-quote-details *ngIf="quote.showDescription" [quote]="quote" (isComplete)='quoteRead($event,i)'>
+          </app-quote-details>
+
         </div>
-  
-  
-  
-        <app-quote-details *ngIf="quote.showDescription" [quote]="quote" (isComplete)='quoteRead($event,i)'>
-        </app-quote-details>
-  
-  
+
+
+
+
+
+
       </div>
 
     </div>
-    
 
 
-   
 
-   
+
+
+
   </div>
 
 </div>
