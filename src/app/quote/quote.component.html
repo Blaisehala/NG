@@ -1,30 +1,38 @@
-
 <div class="container">
   <h1 class="text-center">QUOTABLES.IO</h1>
   <hr>
   <hr>
   <div>
-    
-  
-      <div class=" ff d-flex flex-column" *ngFor="let quote of quotes; let i=index">
-        <div class="row">
-          <div class="col-md-6">
+
+
+    <div class=" ff d-flex flex-column" *ngFor="let quote of quotes; let i=index">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="exp1">
             {{quote.name}}
-         
           </div>
-          <div class="col-md-6">
-            <button (click)="seeDetails(i)">See More</button>
+          
+
+          <div class="exp">
+            {{quote.description}}
           </div>
+
+
         </div>
-  
-  
-  
-        <app-quote-details *ngIf="quote.showDescription" [quote]="quote" (isComplete) = 'quoteRead($event,i)'></app-quote-details>
-       
-  
+        <div class="col-md-6">
+          <button (click)="seeDetails(i)">See More</button>
+        </div>
       </div>
-  
-    
+
+
+
+      <app-quote-details *ngIf="quote.showDescription" [quote]="quote" (isComplete)='quoteRead($event,i)'>
+      </app-quote-details>
+
+
+    </div>
+
+
   </div>
-  
+
 </div>
