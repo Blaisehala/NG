@@ -25,6 +25,14 @@ export class QuoteComponent implements OnInit {
     new Quote(6,'Life','If you look at what you have in life, youll always have more. If you look at what you dont have in life, youll never have enough','Nelson Mandela',new Date(2015,9,20)),
   ];
   
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    // Date 
+    this.quotes.push(quote)
+  }
+
+
   quoteRead(isComplete, index){
     if (isComplete) {
       this.quotes.splice(index,1);

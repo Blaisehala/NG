@@ -1,13 +1,16 @@
 <div class="mt-5 container-fluid">
   <div class=" text-light">
     <h1 class="text-center">QUOTABLES.IO</h1>
+    <p class="text-center" >This application allows you to  create quotes and have the quotes voted on whether they are terrible or  inspirational. 
+
+    </p>
     <hr class="text-ligt">
     <hr>
   </div>
   <div class="row" >
 
     <div class="col-md-6">
-      <app-quote-form></app-quote-form>
+      <app-quote-form  (addQuote)="addNewQuote($event)"></app-quote-form>
 
     </div>
     <div class="col-md-6">
