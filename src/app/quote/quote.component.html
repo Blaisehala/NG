@@ -7,6 +7,7 @@
     <hr class="text-ligt">
     <hr>
   </div>
+
   <div class="row" >
 
     <div class="col-md-6">
@@ -15,10 +16,12 @@
     </div>
     <div class="col-md-6">
       <div class=" ff d-flex flex-column" *ngFor="let quote of quotes; let i=index">
-        <div class="row">
-          <div class="col-md-6">
+        <div class="card mb-5">
+          <div class="card-body">
             <div class="exp1">
-              {{quote.name}}
+              {{quote.title}}
+              {{quote.author}}
+              {{quote.yourname}}
              
             </div>
             
@@ -30,11 +33,11 @@
             <p class="time"> posted on {{quote.postDate|date}}</p>
             
   
-  
+            <div class="col-md-6">
+              <button class="btn btn-info" (click)="seeDetails(i)">See More</button>
+            </div>
           </div>
-          <div class="col-md-6">
-            <button class="btn btn-info" (click)="seeDetails(i)">See More</button>
-          </div>
+         
   
           
         </div>

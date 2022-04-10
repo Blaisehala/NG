@@ -2,11 +2,11 @@
   <h3 class="text-center">Create New Quote</h3>
   <hr>
 
-  <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+  <form (ngSubmit)='submitQuote(quoteForm.value)' #quoteForm='ngForm'>
     <div class="form-group">
       <label for="name">Your name</label>
-      <input type="text" required class="form-control" id="name"[(ngModel)]="newQuote.name" name="name"  #name="ngModel">
-      <div [hidden]="name.valid || name.pristine" class="alert alert-info">
+      <input type="text" required class="form-control" id="yourname" ngModel    name="yourname"  #yourname="ngModel">
+      <div [hidden]="yourname.valid || yourname.pristine" class="alert alert-info">
         <p>Name is required</p>
       </div>
       <!-- Two way Data Binding  -->
@@ -17,26 +17,20 @@
 
     <div class="form-group">
       <label for="">Quote Title</label>
-      <input type="text" required class="form-control" id="name">
-      <!-- <div [hidden]="description.valid || description.pristine" class="alert alert-info">
-        <p>Quote Title is required</p>
-      </div> -->
+      <input type="text" required class="form-control" id="title" ngModel   name="title"  #title="ngModel">
+  
     </div>
 
     <div class="form-group">
       <label for="">Quote</label>
-      <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
-      <!-- <div [hidden]=".valid || .pristine" class="alert alert-info">
-        <p> Quote is required</p>
-      </div> -->
+      <textarea class="form-control"  cols="30" rows="5" id="description" ngModel name="description" #title="ngModel" ></textarea>
+   
     </div>
 
     <div class="form-group">
       <label for="">Quote Author</label>
-      <input type="text" required class="form-control" id="name">
-      <!-- <div [hidden]="name.valid || name.pristine" class="alert alert-info">
-        <p>Quote Author is required</p>
-      </div> -->
+      <input type="text" required class="form-control" id="author" ngModel name="author" #description="ngModel">
+     
     </div>
     <br>
 
