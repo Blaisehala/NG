@@ -1,3 +1,19 @@
-<p>
-  {{quote.description}}
-</p>
+<div class="dd">
+  <p>
+    {{quote.description}}
+  </p>
+  <div class="row">
+    <div class="col">
+      <button>Upvote</button>
+      <button> Downvote</button>
+    </div>
+    <div class="col">
+      <button (click)="quoteRead(true)">delete</button>
+      <br>
+    </div>
+    <br>
+  </div>
+ 
+  
+</div>
+

@@ -1,6 +1,6 @@
 
 <div class="container">
-  <h1>QUOTABLES.IO</h1>
+  <h1 class="text-center">QUOTABLES.IO</h1>
   <hr>
   <hr>
   <div>
@@ -19,7 +19,7 @@
   
   
   
-        <app-quote-details *ngIf="quote.showDescription" [quote]="quote"></app-quote-details>
+        <app-quote-details *ngIf="quote.showDescription" [quote]="quote" (isComplete) = 'quoteRead($event,i)'></app-quote-details>
        
   
       </div>

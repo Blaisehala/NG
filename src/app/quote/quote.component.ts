@@ -24,7 +24,12 @@ export class QuoteComponent implements OnInit {
     new Quote (5,'Time is of the essence','Your time is limited, so dont waste it living someone elses life. Dont be trapped by dogma which is living with the results of other peoples thinking'),
     new Quote(6,'Life','If you look at what you have in life, youll always have more. If you look at what you dont have in life, youll never have enough'),
   ];
-
+  
+  quoteRead(isComplete, index){
+    if (isComplete) {
+      this.quotes.splice(index,1);
+    }
+  }
 
 
   constructor() { }
