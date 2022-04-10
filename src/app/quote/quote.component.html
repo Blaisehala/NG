@@ -1,14 +1,16 @@
-<div class="container-fluid">
-  <h1 class="text-center">QUOTABLES.IO</h1>
-  <hr>
-  <hr>
+<div class="mt-5 container-fluid">
+  <div class=" text-light">
+    <h1 class="text-center">QUOTABLES.IO</h1>
+    <hr class="text-ligt">
+    <hr>
+  </div>
   <div class="row" >
 
     <div class="col-md-6">
       <app-quote-form></app-quote-form>
 
     </div>
-    <div class="col">
+    <div class="col-md-6">
       <div class=" ff d-flex flex-column" *ngFor="let quote of quotes; let i=index">
         <div class="row">
           <div class="col-md-6">

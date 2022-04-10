@@ -1,21 +1,26 @@
-<div class="container-fluid">
+<div class="container-fluid text-light">
     <h3 class="text-center">Create New Quote</h3>
     <hr>
  
     <form>
 <div class="form-group">
     <label for="">Your name</label>
-    <input type="text">
+    <input type="text" required class="form-control" id="name" >
+
+    <!-- Two way Data Binding  -->
+    <!-- [(ngModel)]="newQuote.name" name="name" -->
+
+    
 </div>
      
 <div class="form-group">
     <label for="">Quote Title</label>
-    <input type="text">
+    <input type="text"  >
 </div>
      
 <div class="form-group">
     <label for="">Quote</label>
-    <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+    <textarea class="form-control" name="" id="" cols="30" rows="5" ></textarea>
 </div>
 
 <div class="form-group">
@@ -25,7 +30,7 @@
       
 
 
-      <button class="btn btn-info">Add Quote</button>
+      <button type="submit" class="btn btn-info">Add Quote</button>
     </form>
 
  
