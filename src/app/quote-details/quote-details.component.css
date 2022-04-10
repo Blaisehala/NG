@@ -2,3 +2,12 @@
   /* background-color: blueviolet; */
   color: black;
 }
+
+.fa-thumbs-up{
+  color: yellowgreen;
+  border: 2px;
+}
+
+.fa-thumbs-down{
+  color: red;
+}

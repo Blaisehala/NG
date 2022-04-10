@@ -1,42 +1,54 @@
-<div class="container">
+<div class="container-fluid">
   <h1 class="text-center">QUOTABLES.IO</h1>
   <hr>
   <hr>
-  <div>
+  <div class="row" >
 
-
-    <div class=" ff d-flex flex-column" *ngFor="let quote of quotes; let i=index">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="exp1">
-            {{quote.name}}
-           
-          </div>
-          
-
-          <div class="exp">
-            {{quote.description}}
-          </div>
-
-          <p class="time"> posted on {{quote.postDate}}</p>
-          
-
-
-        </div>
-        <div class="col-md-6">
-          <button class="btn btn-info" (click)="seeDetails(i)">See More</button>
-        </div>
-      </div>
-
-
-
-      <app-quote-details *ngIf="quote.showDescription" [quote]="quote" (isComplete)='quoteRead($event,i)'>
-      </app-quote-details>
-
+    <div class="col-md-6">
+      <app-quote-form></app-quote-form>
 
     </div>
+    <div class="col">
+      <div class=" ff d-flex flex-column" *ngFor="let quote of quotes; let i=index">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="exp1">
+              {{quote.name}}
+             
+            </div>
+            
+  
+            <div class="exp">
+              {{quote.description}}
+            </div>
+  
+            <p class="time"> posted on {{quote.postDate|date}}</p>
+            
+  
+  
+          </div>
+          <div class="col-md-6">
+            <button class="btn btn-info" (click)="seeDetails(i)">See More</button>
+          </div>
+  
+          
+        </div>
+  
+  
+  
+        <app-quote-details *ngIf="quote.showDescription" [quote]="quote" (isComplete)='quoteRead($event,i)'>
+        </app-quote-details>
+  
+  
+      </div>
+
+    </div>
+    
 
 
+   
+
+   
   </div>
 
 </div>
