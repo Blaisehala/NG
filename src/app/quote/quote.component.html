@@ -10,6 +10,7 @@
         <div class="col-md-6">
           <div class="exp1">
             {{quote.name}}
+           
           </div>
           
 
@@ -17,10 +18,13 @@
             {{quote.description}}
           </div>
 
+          <p class="time"> posted on {{quote.postDate}}</p>
+          
+
 
         </div>
         <div class="col-md-6">
-          <button (click)="seeDetails(i)">See More</button>
+          <button class="btn btn-info" (click)="seeDetails(i)">See More</button>
         </div>
       </div>
 
