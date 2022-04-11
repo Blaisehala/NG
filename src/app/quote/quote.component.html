@@ -27,7 +27,7 @@
             <div class="exp1">
               {{quote.title}}
               {{quote.author}}
-              {{quote.yourname}}
+              
 
             </div>
 
@@ -36,7 +36,7 @@
               {{quote.description}}
             </div>
 
-            <p class="time"> posted on {{quote.postDate|date}}</p>
+            
 
 
             <div class="col-md-6">
@@ -46,7 +46,18 @@
 
           <app-quote-details *ngIf="quote.showDescription" [quote]="quote" (isComplete)='quoteRead($event,i)'>
           </app-quote-details>
-
+          
+<div class="row">
+  <div class="col-md-4">
+    <p class="time"> posted by : {{quote.yourname}}</p>
+  </div>
+  <div class="col-md-4">
+    <p class="time">  on : {{quote.postDate|date}}</p>
+  </div>
+</div>
+         
+         
+          
         </div>
 
 
