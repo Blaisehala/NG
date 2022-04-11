@@ -1,10 +1,10 @@
 # Quotables.io
-<hr>
+
 
 ## Author
 [Blaise-Hala](https://github.com/Blaisehala)
 
-<hr>
+
 
 
 
@@ -12,18 +12,17 @@
 ## Description
 
 This application allows you to create quotes and have the quotes voted on whether they are terrible or inspirational.
-<hr>
 
 
 ## Live Link
 [Quotables.io](https://blaisehala.github.io/NG/)
 
-<hr>
+
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
-<hr>
+
 
 ## Installation/Setup instruction
 * Open Terminal
@@ -31,7 +30,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * cd into the cloned 
 * code . or atom .  etc     based on the text editor you have
 
-<hr>
+
 
 ## Technologies Used
 * (HTML5)
@@ -41,44 +40,44 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Typescript
 * Javascript
 
-<hr>
+
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 
-<hr>
+
 
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-<hr>
+
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-<hr>
+
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-<hr>
+
 
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-<hr>
+
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-<hr>
+
 
 ## Licence 
 MIT License
