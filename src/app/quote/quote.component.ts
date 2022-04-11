@@ -16,6 +16,11 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showDescription =!this.quotes[index].showDescription
 
   }
+
+  
+
+
+  
   quotes:Quote[]=[
 
     new Quote(1,'People and Tech','Technology is best when it brings people together','Nelson Mandela', 'PapaHala',new Date(2018,6,5)),
@@ -26,6 +31,16 @@ export class QuoteComponent implements OnInit {
     new Quote(6,'Life','If you look at what you have in life, youll always have more. If you look at what you dont have in life, youll never have enough','Nelson Mandela','PapaHala',new Date(2015,9,20)),
   ];
   
+
+  quotess:Quote[]= [
+    new Quote(4,'The Great','The greatest glory in living lies not in never falling, but in rising every time we fall','Nelson Mandela','PapaHala',new Date(2021,3,19)),
+    new Quote (5,'Time is of the essence','Your time is limited, so dont waste it living someone elses life. Dont be trapped by dogma which is living with the results of other peoples thinking','Nelson Mandela','PapaHala',new Date(2020,9,1)),
+    new Quote(6,'Life','If you look at what you have in life, youll always have more. If you look at what you dont have in life, youll never have enough','Nelson Mandela','PapaHala',new Date(2015,9,20)),
+  ];
+
+
+
+
   addNewQuote(quote){
   let description = quote.description
   let papa = quote.title
