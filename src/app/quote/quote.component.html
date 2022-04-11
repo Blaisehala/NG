@@ -1,6 +1,6 @@
 <div class="mt-5 container-fluid">
   <div class=" text-light">
-    <h1 class="text-center">QUOTABLES.IO</h1>
+    <h1 class=" QQ text-center">QUOTABLES.IO</h1>
     <p class="text-center">This application allows you to create quotes and have the quotes voted on whether they are
       terrible or inspirational.
 
@@ -24,40 +24,62 @@
 
         <div class="card mb-5">
           <div class="card-body">
-            <div class="exp1">
-              {{quote.title}}
-              {{quote.author}}
+            <div class="exp1 row">
+              
+                <div class='col-md-6'>
+                  {{quote.title}}
+                </div>
+
+                <div class="col-md-6">
+                  <button class="btn btn-info" (click)="seeDetails(i)">See More</button>
+                </div>
               
 
             </div>
 
-
+          
             <div class="exp">
               {{quote.description}}
+              
             </div>
+            <!-- <div>
+              {{quote.author}}
+            </div> -->
 
-            
 
 
-            <div class="col-md-6">
-              <button class="btn btn-info" (click)="seeDetails(i)">See More</button>
-            </div>
+
+
           </div>
+
+          <!-- <div class="row">
+            <div class="col-md-4">
+              <p class="time"> posted by : {{quote.yourname}}</p>
+            </div>
+            <div class="col-md-4">
+              <p class="time"> on : {{quote.postDate|date}}</p>
+            </div>
+          </div> -->
 
           <app-quote-details *ngIf="quote.showDescription" [quote]="quote" (isComplete)='quoteRead($event,i)'>
           </app-quote-details>
-          
-<div class="row">
-  <div class="col-md-4">
-    <p class="time"> posted by : {{quote.yourname}}</p>
+
+<div class="card">
+  <div class="card-body">
+    <div class="row ml-5">
+      <div class="col-md-4">
+        <p class="time"> posted by : {{quote.yourname}}</p>
+      </div>
+      <div class="col-md-4">
+        <p class="time">  on : {{quote.postDate|date}}</p>
+      </div>
+    </div>
   </div>
-  <div class="col-md-4">
-    <p class="time">  on : {{quote.postDate|date}}</p>
-  </div>
+ 
 </div>
-         
-         
           
+
+
         </div>
 
 

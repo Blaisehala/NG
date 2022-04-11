@@ -1,27 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&family=Montserrat&family=Open+Sans:ital,wght@1,300&family=Rowdies&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&family=Montserrat&family=Open+Sans:ital,wght@1,300&family=Rowdies&display=swap');
 .container-fluid{
   background-color: rgb(25, 53, 43);
   opacity: 0.8;
   width: 90vw;
-  /* height: 100vh; */
+
 }
 
-/* .ff{ */
-  /* background-color:whitesmoke; */
-/* } */
+.QQ{
+  font-family: 'Fredoka One', cursive;
+}
 
 
 
-.exp1{
-  /* height: 20px; */
+
+
+ .exp1{
+
   
   color: rgb(76, 114, 6);
   font-size: 25px;
+  font-family:  'Fredoka One', cursive;;
 
-}
+} 
 
 .exp{
   color: black;
   font-size: 20px;
+  
 
 }
 
