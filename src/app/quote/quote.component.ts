@@ -12,7 +12,7 @@ import { Quote} from '../quote';
 })
 export class QuoteComponent implements OnInit {
 
-  seeDetails(index){
+  seeDetails(index: string | number){
     this.quotes[index].showDescription =!this.quotes[index].showDescription
 
   }
@@ -27,23 +27,22 @@ export class QuoteComponent implements OnInit {
   ];
   
   addNewQuote(quote){
-  let quo = quote.description
-  let title = quote.title
+  let description = quote.description
+  let papa = quote.title
   let author = quote.author
   let yourname = quote.yourname 
   let date= quote.Date
+  
 
 
 
-    let quoteLength = this.quotes.length;
-    // quote.id = quoteLength+1;
-    // Date 
+ 
     console.log(quote);
-    this.quotes.push(new Quote(title,quo,author,yourname,date));
+    this.quotes.push(new Quote(1,papa,description,author,yourname,date));
   }
 
 
-  quoteRead(isComplete, index){
+  quoteRead(isComplete: any, index: number){
     if (isComplete) {
       this.quotes.splice(index,1);
     }

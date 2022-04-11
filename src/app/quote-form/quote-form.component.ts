@@ -7,6 +7,10 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
+  title:string;
+  description:string
+  author:string
+  yourname:string
 
   newQuote = new Quote(0,"","","","",new Date());
 
